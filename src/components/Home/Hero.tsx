@@ -1,7 +1,5 @@
 import banner from "@/assets/banner.png";
 
-
-
 export default function Hero() {
   return (
     <main
@@ -10,7 +8,7 @@ export default function Hero() {
         backgroundImage: `url(${banner.src})`,
       }}
     >
-      <div className="container flex flex-col  text-start text-white">
+      <div className="container flex flex-col  text-start text-white px-[135px]">
         <h1 className="text-4xl font-bold shadow-lg">
           Plan Your Perfect Day on the Water
         </h1>
@@ -19,7 +17,6 @@ export default function Hero() {
           adventures—tailored to you. Join a group fishing charter or hire a
           private boat.
         </p>
-
       </div>
     </main>
   );

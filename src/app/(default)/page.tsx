@@ -1,5 +1,7 @@
 import Hero from "@/components/Home/Hero";
 import SearchBar from "@/components/Home/SearchBar";
+import SearchDestinations from "@/components/Home/SearchDestinations";
+import WellComeVideo from "@/components/Home/WellComeVideo";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <Hero />
 
       <SearchBar />
+      <WellComeVideo />
+      <SearchDestinations/>
     </div>
   );
 }
