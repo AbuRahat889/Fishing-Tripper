@@ -1,3 +1,4 @@
+import Experience from "@/components/Home/Experience";
 import Hero from "@/components/Home/Hero";
 import SearchBar from "@/components/Home/SearchBar";
 import SearchDestinations from "@/components/Home/SearchDestinations";
@@ -10,7 +11,8 @@ export default function Home() {
 
       <SearchBar />
       <WellComeVideo />
-      <SearchDestinations/>
+      <SearchDestinations />
+      <Experience />
     </div>
   );
 }
