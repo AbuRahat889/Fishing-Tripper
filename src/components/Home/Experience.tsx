@@ -9,7 +9,7 @@ export default function Experience() {
         <div className=" text-center">
           <p className="text-base font-bold leading-7 text-white">WHY CHOOSE FISHING TRIPPER?</p>
           <h1 className="mt-4 text-white text-4xl font-normal leading-10 mb-2">Experience Fishing Like Never Before</h1>
-          <p className="text-[18px] font-normal text-white leading-8 px-32">
+          <p className="text-[18px] font-normal text-white leading-8 px-32 font-satoshi">
             Planning your fishing adventure has never been easier. With flexible
             options, top-rated captains, and seamless booking, we make sure your
             trip is tailored just for you. Whether youre a seasoned angler or a

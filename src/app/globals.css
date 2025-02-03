@@ -12,7 +12,11 @@
   font-weight: 700;
   src: url("../../public/fonts/sk-Modernist-Bold.ttf") format("woff2");
 }
-
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 700;
+  src: url("../../public/fonts/satoshi-Regular.ttf") format("woff2");
+}
 
 :root {
   --background: #ffffff;
