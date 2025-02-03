@@ -10,7 +10,7 @@ import board from "@/assets/boart.svg";
 export default function HomeNavbar() {
   return (
     <div className="container mx-auto fixed top-0 left-0 right-0 z-[999] mt-8">
-      <div className=" flex items-center justify-between font-satoshi ">
+      <div className=" flex flex-col lg:flex-row gap-2 lg:gap-0 items-center justify-between font-satoshi ">
         <div>
           <Image
             className="flex-1 w-36 h-6 "

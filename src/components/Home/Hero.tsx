@@ -8,7 +8,7 @@ export default function Hero() {
         backgroundImage: `url(${banner.src})`,
       }}
     >
-      <div className="container flex flex-col  text-start text-white px-[135px]">
+      <div className="container flex flex-col text-center  lg:text-start text-white px-5   lg:px-[135px]">
         <h1 className="text-4xl font-bold shadow-lg">
           Plan Your Perfect Day on the Water
         </h1>
