@@ -20,7 +20,13 @@ export default function TopCharters() {
         </h1>
 
         <div className="flex items-center justify-center gap-5">
-          <h1 className="text-base text-[#242424] font-bold">Private trip</h1>
+          <h1
+            className={` text-base font-bold  ${
+              isToggled ? "text-[#AEAEB2] " : "text-[#242424]"
+            } `}
+          >
+            Private trip
+          </h1>
 
           <div
             onClick={handleToggle}
@@ -45,7 +51,11 @@ export default function TopCharters() {
             </div>
           </div>
 
-          <h1 className="text-[#AEAEB2] text-base font-medium ">
+          <h1
+            className={` text-base font-bold  ${
+              isToggled ? "text-[#242424] " : "text-[#AEAEB2]"
+            } `}
+          >
             Group Charter
           </h1>
         </div>

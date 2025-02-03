@@ -55,7 +55,7 @@ const TopChartersCard: React.FC<CardProps> = ({
         <p className="font-bold text-sm text-[#171717] ">Key features:</p>
 
         <div className="flex items-center gap-4 mt-4">
-          <div className="flex items-center gap-1 bg-[#EDF1FF] px-2 py-1 rounded-full border-2 border-[#b2c3ff] ">
+          <div className="flex items-center gap-1 bg-[#EDF1FF] px-2 py-1 rounded-full border-2 border-[#b2c3ff] text-[#242424]">
             <Image
               src={doller}
               alt={title}
@@ -66,7 +66,7 @@ const TopChartersCard: React.FC<CardProps> = ({
             {price}
           </div>
 
-          <div className="flex items-center gap-1 bg-[#EDF1FF] px-2 py-1 rounded-full border-2 border-[#b2c3ff] ">
+          <div className="flex items-center gap-1 bg-[#EDF1FF] px-2 py-1 rounded-full border-2 border-[#b2c3ff] text-[#242424] ">
             <Image
               src={clock}
               alt={title}
@@ -74,9 +74,10 @@ const TopChartersCard: React.FC<CardProps> = ({
               width={100}
               className="w-5 h-5 object-cover rounded-lg"
             />
-            {capacity}
+            {duration}
           </div>
-          <div className="flex items-center gap-1 bg-[#EDF1FF] px-2 py-1 rounded-full border-2 border-[#b2c3ff] ">
+
+          <div className="flex items-center gap-1 bg-[#EDF1FF] px-2 py-1 rounded-full border-2 border-[#b2c3ff] text-[#242424] ">
             <Image
               src={men}
               alt={title}
@@ -84,7 +85,7 @@ const TopChartersCard: React.FC<CardProps> = ({
               width={100}
               className="w-5 h-5 object-cover rounded-lg"
             />
-            {duration}
+            {capacity}
           </div>
         </div>
       </div>

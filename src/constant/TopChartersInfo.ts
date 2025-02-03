@@ -5,7 +5,7 @@ export const cardData = [
     description:
       "Brief discription goes here over two lines, Brief discription goes here over two linesBrief discription goes here over two linesBrief discription goes here.",
     location: "Florida",
-    price: "800",
+    price: "£800",
     duration: "8 Hours",
     capacity: "Up to 8 people",
     imageUrl: "/TopCharters/Overlay1.png",
