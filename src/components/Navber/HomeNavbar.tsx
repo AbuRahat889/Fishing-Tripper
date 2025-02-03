@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Button from "../ReUsible/Button";
@@ -8,8 +10,30 @@ import logo from "@/assets/logo.svg";
 import board from "@/assets/boart.svg";
 
 export default function HomeNavbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll to add a background color
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="container mx-auto fixed top-0 left-0 right-0 z-[999] mt-8">
+    // <div className="container mx-auto fixed top-0 left-0 right-0 z-[999] mt-8">
+    <div
+      className={`container mx-auto fixed top-0 left-0 right-0 z-[999] mt-8 ${
+        scrolled ? "backdrop-blur-lg" : "bg-transparent"
+      } transition-colors duration-300`}
+    >
       <div className=" flex flex-col lg:flex-row gap-2 lg:gap-0 items-center justify-between font-satoshi ">
         <div>
           <Image

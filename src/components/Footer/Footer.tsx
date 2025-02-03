@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
 
           {/* Footer Links */}
 
-          <div className="flex-1 flex flex-wrap gap-2 lg:flex-row lg:justify-between items-start lg:items-center px-5 lg:px-0">
+          <div className="flex-1 flex flex-wrap gap-5 lg:flex-row lg:justify-between items-start lg:items-center px-5 lg:px-0">
             <div>
               <h3 className="text-base text-[#171717] font-bold">HEADING</h3>
               <ul className="mt-2 space-y-2">

@@ -3,8 +3,8 @@ import { IoIosSearch } from "react-icons/io";
 export default function SearchBar() {
   return (
     <div className="w-full max-w-5xl mx-auto -mt-20">
-      <div className="bg-white rounded-full pl-[57px] py-3 pr-3 shadow-lg mt-8 flex justify-between items-center">
-        <div className="flex flex-grow space-x-4">
+      <div className="bg-white rounded-xl mx-5 lg:rounded-full pl-5 lg:pl-[57px] py-3 pr-3 shadow-lg mt-8 flex flex-col lg:flex-row justify-between items-center">
+        <div className="grid  grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-5 ">
           <div>
             <label className="block text-[18px] font-normal text-[#474747]">
               Where
@@ -51,7 +51,7 @@ export default function SearchBar() {
           </div>
         </div>
 
-        <div className="bg-[#0037ff]  text-white rounded-full h-16 w-16 flex justify-center items-center">
+        <div className="bg-[#0037ff]  text-white rounded-xl lg:rounded-full h-16 w-16 flex justify-center items-center">
           <IoIosSearch className="text-3xl" />
         </div>
       </div>
