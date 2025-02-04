@@ -20,7 +20,7 @@ const Faq: React.FC = () => {
     );
 
   return (
-    <Space direction="vertical" className="w-full">
+    <Space direction="vertical" className="w-full mt-4">
       <Collapse
         collapsible="icon"
         expandIcon={expandIcon}

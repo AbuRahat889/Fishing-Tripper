@@ -36,6 +36,7 @@ export default function SearchBar() {
               className="mt-1 w-full  focus:ring "
             />
           </div>
+          
           <div>
             <label className="block text-[18px] font-normal text-[#474747]">
               Private or shared?
