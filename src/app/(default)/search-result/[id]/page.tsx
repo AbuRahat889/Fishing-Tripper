@@ -8,12 +8,14 @@ import { IoLocationOutline } from "react-icons/io5";
 
 import Faq from "@/components/DetailsPage/Faq";
 import KeyFeature from "@/components/DetailsPage/KeyFeature";
+import PricingCard from "@/components/DetailsPage/PriceingCard";
+import { PricingCardInfo } from "@/constant/PricingCard";
 
 export default function page() {
   return (
     <div className="container mx-auto  ">
-      <div className="flex items-center justify-between gap-5 mt-10">
-        <div className="max-w-lg">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-5 mt-10 px-5 lg:px-2">
+        <div className="max-w-sm lg:max-w-lg">
           <DetailsCarousel product={{ images }} />
         </div>
         <div className="">
@@ -69,7 +71,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="mt-24">
+      <div className="mt-24  px-5 lg:px-2">
         <h1 className="text-[40px] text-[#242424] font-bold leading-7">
           Select your trip
         </h1>
@@ -102,6 +104,12 @@ export default function page() {
               <option>10 people</option>
             </select>
           </div>
+        </div>
+
+        <div className="">
+          {PricingCardInfo?.map((card) => (
+            <PricingCard key={card.id} {...card} />
+          ))}
         </div>
       </div>
     </div>
