@@ -33,7 +33,7 @@ const PricingCard: React.FC<CardProps> = ({
   const route = useRouter();
   const handleclick = (id: number) => {
     console.log("this is click of ", id);
-    route.push(`/search-result/${id}`);
+    route.push(`/payment`);
   };
 
   return (
