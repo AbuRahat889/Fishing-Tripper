@@ -19,7 +19,8 @@
     "react-icons": "^5.4.0",
     "react-redux": "^9.2.0",
     "redux-persist": "^6.0.0",
-    "rtk-ready": "^2.0.7"
+    "rtk-ready": "^2.0.7",
+    "swiper": "^11.2.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

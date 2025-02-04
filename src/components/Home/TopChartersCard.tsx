@@ -5,6 +5,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import doller from "@/assets/icon/doller.svg";
 import clock from "@/assets/icon/clock.svg";
 import men from "@/assets/icon/men.svg";
+import { useRouter } from "next/navigation";
 
 interface CardProps {
   title: string;
@@ -14,6 +15,7 @@ interface CardProps {
   duration: string;
   capacity: string;
   imageUrl: string;
+  id: number;
 }
 
 const TopChartersCard: React.FC<CardProps> = ({
@@ -24,7 +26,14 @@ const TopChartersCard: React.FC<CardProps> = ({
   duration,
   capacity,
   imageUrl,
+  id,
 }) => {
+  const route = useRouter();
+  const handleclick = (id: number) => {
+    console.log("this is click of ", id);
+    route.push(`/search-result/${id}`);
+  };
+
   return (
     <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg p-4 gap-4 border mt-5">
       <Image
@@ -45,7 +54,10 @@ const TopChartersCard: React.FC<CardProps> = ({
               <IoLocationOutline className="text-[#FF9500] h-6 w-6 font-bold" />
               {location}
             </span>
-            <button className="bg-orange-400 text-white px-4 py-2 rounded-lg text-base font-satoshi">
+            <button
+              onClick={() => handleclick(id)}
+              className="bg-orange-400 text-white px-4 py-2 rounded-lg text-base font-satoshi"
+            >
               Reserve now
             </button>
           </div>

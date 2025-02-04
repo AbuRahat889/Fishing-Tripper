@@ -31,3 +31,10 @@ export const cardData = [
     imageUrl: "/TopCharters/Overlay3.png",
   },
 ];
+
+export const image = [
+  "/carousal/Carousel.png",
+  "/carousal/Carousel.png",
+  "/carousal/Carousel.png",
+  "/carousal/Carousel.png",
+];
