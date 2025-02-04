@@ -5,7 +5,7 @@ export default function page() {
   return (
     <div>
       <div className="bg-[#F5F5F5] pt-[41px] pb-[31px] ">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-5 lg:px-0">
           <h1 className="text-2xl font-bold text-[#242424] leading-9">
             Florida / 10th September 2025 / 4 people
           </h1>

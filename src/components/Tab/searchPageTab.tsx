@@ -49,7 +49,7 @@ const SearchTab = () => (
       },
     }}
   >
-    <section className="pt-[28px] pb-[40px] px-5">
+    <section className="pt-[28px] pb-[40px] px2 md:px-5">
       <div className="container">
         <div className=" p-4 ">
           <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
