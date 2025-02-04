@@ -124,7 +124,7 @@ export default function PaymentCard() {
         <div className="flex items-start gap-2">
           <FaHandHoldingDollar className="text-gray-500 h-8 w-8 mt-1" />
           <p>
-            Youll pay the remaining balance on your trip{" "}
+            You&apos;ll pay the remaining balance on your trip{" "}
             <span className="font-bold">directly to the captain.</span>
           </p>
         </div>
