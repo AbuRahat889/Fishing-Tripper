@@ -19,8 +19,8 @@ export default function page() {
         </div>
       </div>
 
-      <div className=" flex gap-16 flex-col-reverse lg:flex-col xl:flex-row ml-auto items-center justify-center xl:justify-end">
-        <div className="container flex flex-col items-center lg:items-center justify-start lg:justify-end px-5 lg:px-2 max-[500px] ">
+      <div className=" flex gap-16 flex-col-reverse justify-center lg:flex-col xl:flex-row xl:justify-end ml-auto items-center  ">
+        <div className="container flex flex-col items-center lg:items-center xl:items-end justify-start lg:justify-end px-5 lg:px-2 xl:mx-7 ">
           <div className="  mr-0 lg:mr-32 ">
             <div className="p-3 border-2 my-10 border-[#FFE432] bg-[#FDFFD8]">
               Once the group is full, you’ll receive a final confirmation that
