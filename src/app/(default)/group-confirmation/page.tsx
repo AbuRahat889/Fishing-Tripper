@@ -9,18 +9,23 @@ export default function page() {
       <div className="bg-[#F5F5F5] ">
         <div className="container mx-auto pt-10 pb-6 px-5 lg:px-2">
           <h1 className="text-2xl text-[#242424] font-bold leading-9">
-            Your Fishing Trip is Confirmed!
+            You’re All Set for Your Group Fishing Adventure!
           </h1>
           <h1 className="text-2xl text-[#474747] font-normal font-satoshi mt-2">
-            Thanks for booking with us! We’ve sent the full details to your
-            email at email@example.com. If you don’t see it, check your spam
-            folder or contact us.
+            Thank you for joining this group trip! We’ve sent the trip details
+            to your email at user’s email address. We’ll notify you as soon as
+            the trip is fully booked and confirmed by the captain.
           </h1>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-14  ml-auto items-center justify-between">
-        <div className="container flex flex-col items-start justify-start lg:justify-center lg:items-center px-5 ">
-          <div>
+
+      <div className=" flex gap-16 flex-col-reverse lg:flex-col xl:flex-row ml-auto items-center justify-center xl:justify-end">
+        <div className="container flex flex-col items-center lg:items-center justify-start lg:justify-end px-5 lg:px-2 max-[500px] ">
+          <div className="  mr-0 lg:mr-32 ">
+            <div className="p-3 border-2 my-10 border-[#FFE432] bg-[#FDFFD8]">
+              Once the group is full, you’ll receive a final confirmation that
+              this trip is going ahead.
+            </div>
             <h1 className="text-3xl text-[#242424] font-bold leading-normal text-left ">
               Key booking details
             </h1>
@@ -51,6 +56,11 @@ export default function page() {
                 Booking Reference Number:
                 <span className="text-[#878787]"> #12345.</span>
               </p>
+              <p className="text-base font-normal text-[#878787] mt-6">
+                Invite your friends to join this trip! Share this{" "}
+                <span className="text-[#0037FF]"> link</span> to fill the
+                remaining spots.
+              </p>
             </div>
 
             <div className="my-10">
@@ -58,8 +68,10 @@ export default function page() {
                 What next?
               </h1>
               <p className="text-base font-normal text-[#878787] ">
-                Arrive 15 minutes early at Marina Bay, Florida. <br /> Bring
-                sunscreen, snacks, and any fishing gear you prefer.
+                We have taken your deposit, we’ll let you know once the trip is
+                going ahead, you’ll <br /> then pay the remainder amount on the
+                day. <br /> <br /> If the group booking isn’t going ahead, we
+                will refund your deposit back to your <br /> payment method.
               </p>
             </div>
 

@@ -18,7 +18,7 @@ interface CardProps {
   id: number;
 }
 
-const TopChartersCard: React.FC<CardProps> = ({
+const GroupChartersCard: React.FC<CardProps> = ({
   title,
   description,
   location,
@@ -31,7 +31,7 @@ const TopChartersCard: React.FC<CardProps> = ({
   const route = useRouter();
   const handleclick = (id: number) => {
     console.log("this is click of ", id);
-    route.push(`/private-charter/${id}`);
+    route.push(`/group-charter/${id}`);
   };
 
   return (
@@ -100,9 +100,19 @@ const TopChartersCard: React.FC<CardProps> = ({
             {capacity}
           </div>
         </div>
+
+        <div className="mt-4">
+          <h1 className="text-base text-[#171717] font-bold leading-6">
+            Fishing species:{" "}
+            <span className="text-[#878787] font-normal">
+              {" "}
+              Species #1, Species #2, Species #3, Species #4,
+            </span>
+          </h1>
+        </div>
       </div>
     </div>
   );
 };
 
-export default TopChartersCard;
+export default GroupChartersCard;

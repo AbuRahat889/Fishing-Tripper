@@ -35,3 +35,25 @@ body {
   background: var(--background);
   font-family: "Sk-Modernist";
 }
+
+/* Custom Swiper Pagination Styles */
+.product-pagination .swiper-pagination-bullet {
+  width: 18px; /* Custom size */
+  height: 18px;
+  background-color: white; /* Custom bullet color */
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-pagination .swiper-pagination-bullet-active {
+  background-color: #0037ff; /* Active bullet color */
+  width: 18px; /* Increase size for active bullet */
+  height: 18px;
+  opacity: 1;
+}
+/* 
+@media (max-width: 1150px) {
+  .imageCard {
+    flex-direction: column;
+  }
+} */

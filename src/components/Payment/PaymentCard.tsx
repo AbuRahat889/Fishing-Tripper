@@ -89,6 +89,7 @@ export default function PaymentCard() {
               $80
             </span>
           </p>
+          {/* this is only for privite charter  */}
           <p>
             <span className="text-base font-bold text-[#171717] mr-2">
               Pay on the day:
@@ -97,6 +98,15 @@ export default function PaymentCard() {
               $800
             </span>
           </p>
+          {/* this is only for group charter  */}
+          {/* <p>
+            <span className="text-base font-bold text-[#171717] mr-2">
+              Payment taken if boat fills:
+            </span>{" "}
+            <span className="text-base font-normal text-[#242424] leading-7">
+              $800
+            </span>
+          </p> */}
         </div>
 
         {/* Terms & Conditions Link */}
@@ -136,15 +146,6 @@ export default function PaymentCard() {
           amounts displayed in other currencies are approximate and may vary
           based on exchange rates.
         </p>
-
-        {/* <div className="flex items-start gap-2">
-          <FaHandHoldingDollar className="text-gray-500 h-8 w-8 mt-1" />
-          <p className="break-words">
-            You can pay the captain with the following payment methods:{" "}
-            <span className="font-bold">Visa.</span> When paying the remaining
-            balance with a credit card, there is a
-          </p>
-        </div> */}
 
         {/* Payment Methods */}
         <div className="flex items-start gap-2">

@@ -24,7 +24,8 @@ export default function PaymentDetails() {
   };
   const route = useRouter();
   const handleBook = () => {
-    route.push("/confirmation");
+    route.push("/private-confirmation");
+    route.push("/group-confirmation");
   };
 
   return (

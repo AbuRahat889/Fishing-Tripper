@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
@@ -44,26 +45,14 @@ const DetailsCarousel = ({ product }: { product: productType }) => {
         ))}
       </Swiper>
 
-      <div className="absolute bottom-[20px] left-[50%] translate-x-[-50%] z-[2]">
+      <div className=" ">
         <div className="flex items-center gap-2">
-          <button>
-            <Image
-              src="/previous-arrow.svg"
-              alt="Left arrow"
-              height={14}
-              width={14}
-              className="object-contain product-next"
-            />
+          <button className="absolute top-[50%] left-3  translate-x-[-50%] z-[2]">
+            <IoIosArrowBack className="text-white text-3xl product-next" />
           </button>
-          <div className="product-pagination"></div>{" "}
-          <button>
-            <Image
-              src="/next-arrow.svg"
-              alt="Right arrow"
-              height={14}
-              width={14}
-              className="object-contain product-prev"
-            />
+          <div className="absolute bottom-5 flex items-center justify-center z-[2] product-pagination"></div>{" "}
+          <button className="absolute top-[50%] right-3  translate-x-[-50%] z-[2]">
+            <IoIosArrowForward className="text-white text-2xl product-prev" />
           </button>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import SearchTab from "@/components/Tab/searchPageTab";
+import GroupTab from "@/components/Group-charterTab/GroupTab";
 import React from "react";
 
 export default function page() {
@@ -14,9 +14,14 @@ export default function page() {
           </h1>
         </div>
       </div>
+      <div className="container mx-auto bg-[#D9D9D9] mt-8">
+        <h1 className=" text-center text-[40px] font-normal leading-10 text-[#242424] py-20 ">
+          Group charter explanation goes here
+        </h1>
+      </div>
 
       <div>
-        <SearchTab />
+        <GroupTab />
       </div>
     </div>
   );

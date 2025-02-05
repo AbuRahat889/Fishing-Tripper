@@ -31,9 +31,10 @@ const PricingCard: React.FC<CardProps> = ({
   deposit,
 }) => {
   const route = useRouter();
+
   const handleclick = (id: number) => {
     console.log("this is click of ", id);
-    route.push(`/payment`);
+    route.push(`/payment?type=private`);
   };
 
   return (
