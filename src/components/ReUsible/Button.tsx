@@ -26,7 +26,8 @@ export default function Button({
   const variantClasses = {
     primary:
       "bg-[#FF9500] text-white text-base rounded-[23px] text-center  font-medium font-shatosi",
-    secondary: "bg-gray-500 text-white hover:bg-gray-600",
+    secondary:
+      "bg-[#FF9500] text-white text-base rounded-[10px] text-center  font-medium font-shatosi",
     outline:
       "bg-[#FF9500]  text-teal-500 text-center text-md px-4 py-1 rounded-[4px]  hover:bg-teal-100",
     ghost:
