@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 
 // src/store/store.ts
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
