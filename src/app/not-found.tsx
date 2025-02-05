@@ -11,10 +11,11 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div>
-      <div className="bg-[#F5F5F5] py-9">
+      <div className="bg-[#F5F5F5] py-9 px-5 lg:px-0">
         <div className="container mx-auto px-5 lg:px-0">
           <h1 className="text-2xl text-[#242424] font-bold leading-9">
-            Oops! The page you're looking for doesn't exist or a link is broken.
+            Oops! The page you&apos;re looking for doesn&apos;t exist or a link
+            is broken.
           </h1>
           <h1 className="text-2xl text-[#474747] font-normal leading-7">
             If the error persists, contact us below.
@@ -22,16 +23,7 @@ export default function NotFound() {
         </div>
       </div>
 
-      <div
-        className="container mx-auto text-center relative"
-        // style={{
-        //   background: `url(${image.src})`,
-        // //   objectFit:"fill",
-        // //   backgroundSize: "cover", // Optional: Makes the image cover the entire div
-        // //   backgroundPosition: "center", // Optional: Centers the image
-
-        // }}
-      >
+      <div className="container mx-auto text-center relative">
         <Image
           src={image}
           alt="error"
