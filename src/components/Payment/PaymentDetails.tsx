@@ -10,6 +10,7 @@ import masteCard from "@/assets/payment/masteCard.svg";
 import mestero from "@/assets/payment/mestero.svg";
 import payPal from "@/assets/payment/payPal.svg";
 import Button from "../ReUsible/Button";
+import { useRouter } from "next/navigation";
 
 export default function PaymentDetails() {
   const {
@@ -20,6 +21,10 @@ export default function PaymentDetails() {
 
   const onSubmit = (data: any) => {
     console.log("Form Submitted:", data);
+  };
+  const route = useRouter();
+  const handleBook = () => {
+    route.push("/confirmation");
   };
 
   return (
@@ -273,7 +278,9 @@ export default function PaymentDetails() {
 
         {/* Submit Button */}
         <div className="col-span-2">
-          <Button type="submit">Book now</Button>
+          <Button onClick={handleBook} type="submit">
+            Book now
+          </Button>
         </div>
       </form>
     </div>
