@@ -1,20 +1,23 @@
+"use client";
 import Footer from "@/components/Footer/Footer";
-// import HomeNavbar from "@/components/Navber/HomeNavbar";
+import HomeNavbar from "@/components/Navber/HomeNavbar";
 import Navbar from "@/components/Navber/Navbar";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-export default function layout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
   return (
     <>
-      {/* <HomeNavbar /> */}
-      
-      <Navbar/>
+      {pathname === "/" ? <HomeNavbar /> : <Navbar />}
+      {/* <HomeNavbar />
+      <Navbar /> */}
       {children}
-      <Footer/>
+      <Footer />
     </>
   );
 }

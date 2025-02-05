@@ -8,10 +8,40 @@ import Button from "../ReUsible/Button";
 import logo from "@/assets/logo2.svg";
 import board from "@/assets/boart.svg";
 import { IoIosSearch } from "react-icons/io";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setVisible(false); // Hide navbar when scrolling down
+      } else {
+        setVisible(true); // Show navbar when scrolling up
+      }
+
+      setScrolled(currentScrollY > 50); // Apply background and shadow effect
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
   return (
-    <div className="bg-white shadow-md sticky top-0 left-0 right-0 z-[999] pt-[34px] pb-6">
+    <div
+      className={`sticky  top-0 left-0 right-0 z-[999] transition-all duration-500 ease-in-out transform ${
+        scrolled ? "bg-white py-3 shadow-md text-black" : "bg-transparent py-5"
+      } ${
+        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+      }`}
+    >
       <div className="container mx-auto ">
         <div className=" flex flex-col lg:flex-row gap-2 lg:gap-0 items-center justify-between font-satoshi ">
           <div>
