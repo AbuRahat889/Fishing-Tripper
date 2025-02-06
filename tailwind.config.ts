@@ -24,6 +24,10 @@ export default {
         modernist: ["Sk-Modernist", "sans-serif"],
         satoshi: ["Satoshi", "sans-serif"],
       },
+      boxShadow: {
+        customShadow:
+          "0px 0px 1px 0px rgba(13, 13, 13, 0.90), 0px 8px 16px 0px #0D0D0D",
+      },
     },
   },
   plugins: [],

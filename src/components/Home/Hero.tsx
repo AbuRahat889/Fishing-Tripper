@@ -3,16 +3,16 @@ import banner from "@/assets/banner.png";
 export default function Hero() {
   return (
     <main
-      className="bg-cover bg-center bg-no-repeat pt-[138px] pb-[110px]"
+      className="bg-cover bg-center bg-no-repeat pt-[150px] pb-[120px]"
       style={{
         backgroundImage: `url(${banner.src})`,
       }}
     >
       <div className="container flex flex-col text-center  lg:text-start text-white px-5   lg:px-[135px]">
-        <h1 className="text-4xl font-bold shadow-lg">
+        <h1 className="text-[40px] font-bold shadow-lg">
           Plan Your Perfect Day on the Water
         </h1>
-        <p className="max-w-2xl text-2xl font-normal leading-normal tracking-widest mt-3">
+        <p className="max-w-2xl text-2xl font-normal tracking-[-0.43px] mt-3">
           Find the best fishing charters, expert captains, and unforgettable
           adventures—tailored to you. Join a group fishing charter or hire a
           private boat.

@@ -44,7 +44,7 @@ export default function HomeNavbar() {
       }`}
     >
       <div className="container mx-auto flex flex-col lg:flex-row gap-2 lg:gap-0 items-center justify-between font-satoshi ">
-        <div>
+        <Link href={"/"}>
           {scrolled ? (
             <Image
               className="flex-1 w-36 h-6 "
@@ -62,12 +62,12 @@ export default function HomeNavbar() {
               width={100}
             />
           )}
-        </div>
+        </Link>
 
         <div className="flex gap-3 items-center">
           <Link
             href={"/waitlist"}
-            className={`text-base font-normal leading-normal  ${
+            className={`text-base font-normal leading-normal hover:text-[#FF9500] transition-colors duration-300 ease-in-out  ${
               scrolled ? "text-black" : "text-white"
             } `}
           >
@@ -75,7 +75,7 @@ export default function HomeNavbar() {
           </Link>
           <Link
             href={"/login"}
-            className={`text-base font-normal leading-normal  ${
+            className={`text-base font-normal leading-normal hover:text-[#FF9500] transition-colors duration-300 ease-in-out  ${
               scrolled ? "text-black" : "text-white"
             } `}
           >
@@ -84,7 +84,7 @@ export default function HomeNavbar() {
 
           <Button
             variant="primary"
-            className="flex gap-1 font-satoshi text-base font-bold"
+            className="flex gap-1 font-satoshi text-base font-bold t"
           >
             <Image
               className="flex-1 h-6 w-6 "

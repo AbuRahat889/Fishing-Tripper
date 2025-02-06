@@ -8,7 +8,7 @@ export const cardData = [
     price: "£800",
     duration: "8 Hours",
     capacity: "Up to 8 people",
-    imageUrl: "/TopCharters/Overlay1.png",
+    imageUrl: "/TopCharters/Overlay.jpg",
   },
   {
     id: 2,

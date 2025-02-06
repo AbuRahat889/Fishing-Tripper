@@ -8,11 +8,16 @@ interface CardInfo {
 
 export default function ExperienceCard({ cardInfo }: { cardInfo: CardInfo }) {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6  flex flex-col">
+    <div className="bg-white shadow-md rounded-lg p-6  flex flex-col hover:shadow-customShadow transition-shadow duration-300 ease-in-out">
       {/* Icon */}
       <div className="w-12 h-12 flex items-center justify-center bg-orange-500 rounded-full text-white">
-        <Image src={cardInfo?.icon} alt="icon" height={100} width={100} className="h-6 w-6"/>
-        
+        <Image
+          src={cardInfo?.icon}
+          alt="icon"
+          height={100}
+          width={100}
+          className="h-6 w-6"
+        />
       </div>
       {/* Title */}
       <h2 className="text-lg font-bold leading-8 text-[#242424] mt-6">

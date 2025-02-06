@@ -33,27 +33,27 @@ const Footer: React.FC = () => {
 
             <div className="flex gap-8 items-center my-10">
               <FaTwitter
-                className="text-[#171717] h-5 w-5 cursor-pointer"
+                className="text-[#171717] h-5 w-5 cursor-pointer hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
                 size={20}
               />
               <FaFacebookF
-                className="text-[#171717] h-5 w-5 cursor-pointer"
+                className="text-[#171717] h-5 w-5 cursor-pointer hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
                 size={20}
               />
               <FaDiscord
-                className="text-[#171717] h-5 w-5 cursor-pointer"
+                className="text-[#171717] h-5 w-5 cursor-pointer hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
                 size={20}
               />
               <FaInstagram
-                className="text-[#171717] h-5 w-5 cursor-pointer"
+                className="text-[#171717] h-5 w-5 cursor-pointer hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
                 size={20}
               />
               <FaTelegramPlane
-                className="text-[#171717] h-5 w-5 cursor-pointer"
+                className="text-[#171717] h-5 w-5 cursor-pointer hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
                 size={20}
               />
             </div>
-            <p className="text-[#424242] text-sm font-normal mt-4">
+            <p className="text-[#424242] text-sm font-normal mt-4 hover:text-[#FF9500] transition-colors duration-300 ease-in-out">
               Copyright ©2022. Cabana Inc.
             </p>
           </div>
@@ -65,27 +65,42 @@ const Footer: React.FC = () => {
               <h3 className="text-base text-[#171717] font-bold">HEADING</h3>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #1
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #2
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #3
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #4
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575]">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #5
                   </a>
                 </li>
@@ -95,27 +110,42 @@ const Footer: React.FC = () => {
               <h3 className="text-base text-[#171717] font-bold">HEADING</h3>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #1
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #2
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #3
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #4
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575]">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #5
                   </a>
                 </li>
@@ -125,27 +155,42 @@ const Footer: React.FC = () => {
               <h3 className="text-base text-[#171717] font-bold">HEADING</h3>
               <ul className="mt-2 space-y-2">
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #1
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #2
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #3
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575] ">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #4
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-base text-[#757575]">
+                  <a
+                    href="#"
+                    className="text-base text-[#757575] hover:text-[#FF9500] transition-colors duration-300 ease-in-out"
+                  >
                     Footer Link #5
                   </a>
                 </li>

@@ -44,7 +44,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto ">
         <div className=" flex flex-col lg:flex-row gap-2 lg:gap-0 items-center justify-between font-satoshi ">
-          <div>
+          <Link href={"/"}>
             <Image
               className="flex-1 w-36 h-6 "
               src={logo}
@@ -52,7 +52,7 @@ export default function Navbar() {
               height={100}
               width={100}
             />
-          </div>
+          </Link>
 
           <div className="bg-white rounded-xl lg:rounded-full pl-5 lg:pl-[57px] py-3 pr-3 shadow-xl flex flex-col lg:flex-row justify-between items-center">
             <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-1 max-w-sm ">
@@ -88,13 +88,14 @@ export default function Navbar() {
           <div className="flex gap-3 items-center">
             <Link
               href={"/waitlist"}
-              className="text-[15px] font-semibold  text-[#242424] "
+              className="text-[15px] font-semibold  text-[#242424] hover:text-[#FF9500] "
             >
               Sign up
             </Link>
+            
             <Link
               href={"/login"}
-              className="text-[15px] font-semibold  text-[#242424] "
+              className="text-[15px] font-semibold  text-[#242424] hover:text-[#FF9500]"
             >
               Login
             </Link>

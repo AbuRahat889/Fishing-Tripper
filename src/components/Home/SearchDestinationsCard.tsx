@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import placeholder from "@/assets/placeholder.webp";
+
 interface CardInfo {
   image: string;
   title: string;
@@ -14,14 +16,16 @@ export default function SearchDestinationsCard({
   cardInfo: CardInfo;
 }) {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-      <Image
-        src={cardInfo.image}
-        alt={cardInfo.title}
-        height={200}
-        width={200}
-        className="w-full h-56 object-cover"
-      />
+    <div className="bg-white shadow-lg rounded-lg ">
+      <div className="overflow-hidden ">
+        <Image
+          src={cardInfo.image || placeholder}
+          alt={cardInfo.title}
+          height={200}
+          width={200}
+          className="w-full h-56 object-cover hover:scale-110 transition-transform duration-300"
+        />
+      </div>
 
       <div className="p-6">
         <h2 className="text-2xl text-[#171717]  font-bold mb-2 flex items-center leading-9">
