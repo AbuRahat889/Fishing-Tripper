@@ -5,6 +5,7 @@ import logo from "@/assets/boart.svg";
 import Image from "next/image";
 import TopChartersCard from "./TopChartersCard";
 import { cardData } from "@/constant/TopChartersInfo";
+import GroupChartersCard from "../Group-charterTab/GroupChartersCard";
 
 export default function TopCharters() {
   const [isToggled, setIsToggled] = useState(false);
@@ -62,9 +63,14 @@ export default function TopCharters() {
       </div>
 
       <div className="">
-        {cardData?.map((card) => (
-          <TopChartersCard key={card.id} {...card} />
-        ))}
+        {/* this is group charter  */}
+        {isToggled
+          ? cardData?.map((card) => (
+              <GroupChartersCard key={card.id} {...card} />
+            ))
+          : cardData?.map((card) => (
+              <TopChartersCard key={card.id} {...card} /> //private charter
+            ))}
       </div>
     </div>
   );
