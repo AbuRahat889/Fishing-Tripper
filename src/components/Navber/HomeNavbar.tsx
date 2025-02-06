@@ -66,7 +66,7 @@ export default function HomeNavbar() {
 
         <div className="flex gap-3 items-center">
           <Link
-            href={"/"}
+            href={"/waitlist"}
             className={`text-base font-normal leading-normal  ${
               scrolled ? "text-black" : "text-white"
             } `}
@@ -74,7 +74,7 @@ export default function HomeNavbar() {
             Sign up
           </Link>
           <Link
-            href={"/"}
+            href={"/login"}
             className={`text-base font-normal leading-normal  ${
               scrolled ? "text-black" : "text-white"
             } `}

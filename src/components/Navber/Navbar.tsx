@@ -87,13 +87,13 @@ export default function Navbar() {
 
           <div className="flex gap-3 items-center">
             <Link
-              href={"/"}
+              href={"/waitlist"}
               className="text-[15px] font-semibold  text-[#242424] "
             >
               Sign up
             </Link>
             <Link
-              href={"/"}
+              href={"/login"}
               className="text-[15px] font-semibold  text-[#242424] "
             >
               Login

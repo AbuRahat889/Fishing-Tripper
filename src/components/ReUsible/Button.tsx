@@ -31,7 +31,7 @@ export default function Button({
     outline:
       "bg-[#FF9500]  text-teal-500 text-center text-md px-4 py-1 rounded-[4px]  hover:bg-teal-100",
     ghost:
-      "border border-dark-ash text-ash text-center text-md px-4 py-1 rounded-[4px] bg-dark-ash",
+      "bg-black text-white text-xl rounded-[10px] flex item-center justify-center  font-medium font-shatosi",
   };
   const sizeClasses = {
     sm: "text-sm px-2 py-1",
