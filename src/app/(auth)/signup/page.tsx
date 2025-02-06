@@ -1,0 +1,69 @@
+import Image from "next/image";
+import Button from "@/components/ReUsible/Button";
+
+import image from "@/assets/signup.png";
+import logo2 from "@/assets/logo.svg";
+
+const SignUp = () => {
+  return (
+    <div className="flex min-h-screen w-full">
+      {/* Left Section */}
+      <div className="w-1/2 relative bg-blue-600 flex flex-col justify-center items-start text-white px-10">
+        <Image
+          src={logo2}
+          alt="logo"
+          height={100}
+          width={100}
+          className="absolute top-16 left-28 h-28 w-52"
+        />
+        {/* <h1 className="text-3xl font-bold mb-4">
+          Fishing <span className="text-white">Tripper</span>
+        </h1> */}
+
+        <div className="text-start max-w-3xl mx-auto">
+          <div>
+            <h2 className="text-4xl font-bold leading-[52px] mb-2">
+              Sign up today to join our waitlist!
+            </h2>
+            <p className="text-lg font-normal mb-6">
+              Launching soon... Hire out private fishing charters or sign up to
+              group day bookings!
+            </p>
+          </div>
+
+          {/* Signup Form */}
+          <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-lg mt-10">
+            <label
+              htmlFor="email"
+              className="text-base font-bold text-[#171717] block mb-1"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <Button variant="secondary" className="w-full mt-6 font-bold">
+              Join the waitlist
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Section */}
+      <div className="w-1/2 relative">
+        <Image
+          src={image} // Replace with your actual image filename in /public
+          alt="Fishing Trip"
+          layout="fill"
+          objectFit="cover"
+          className=""
+        />
+      </div>
+    </div>
+  );
+};
+
+export default SignUp;
