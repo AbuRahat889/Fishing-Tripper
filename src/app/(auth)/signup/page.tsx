@@ -6,16 +6,18 @@ import logo2 from "@/assets/logo.svg";
 
 const SignUp = () => {
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex flex-col md:flex-row min-h-screen w-full">
       {/* Left Section */}
-      <div className="w-1/2 relative bg-blue-600 flex flex-col justify-center items-start text-white px-10">
-        <Image
-          src={logo2}
-          alt="logo"
-          height={100}
-          width={100}
-          className="absolute top-16 left-28 h-28 w-52"
-        />
+      <div className=" w-full md:w-1/2 relative bg-blue-600 pb-5 flex flex-col justify-center items-start text-white px-10">
+        <div className=" max-w-3xl mr-auto px-0 md:px-10 lg:px-16">
+          <Image
+            src={logo2}
+            alt="logo"
+            height={100}
+            width={100}
+            className=" h-28 w-52"
+          />
+        </div>
         {/* <h1 className="text-3xl font-bold mb-4">
           Fishing <span className="text-white">Tripper</span>
         </h1> */}
@@ -53,13 +55,13 @@ const SignUp = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-1/2 relative">
+      <div className="w-full md:w-1/2 relative max-h-screen">
         <Image
-          src={image} // Replace with your actual image filename in /public
+          src={image} // Ensure 'image' is a valid path or URL
           alt="Fishing Trip"
-          layout="fill"
-          objectFit="cover"
-          className=""
+          width={800} // Adjust width based on your image dimensions
+          height={600} // Adjust height accordingly
+          className="w-full h-full object-cover"
         />
       </div>
     </div>
