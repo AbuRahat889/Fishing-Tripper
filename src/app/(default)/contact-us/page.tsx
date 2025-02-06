@@ -1,5 +1,3 @@
-
-
 "use client";
 import Button from "@/components/ReUsible/Button";
 import React from "react";

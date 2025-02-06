@@ -95,21 +95,4 @@ const Faq: React.FC = () => {
 
 export default Faq;
 
-{
-  //   /* <Collapse
-  //       collapsible={<IoIosArrowDown />}
-  //       expandIconPosition="end"
-  //       className="border border-[#DADADA] w-full" // Custom border color
-  //       items={[
-  //         {
-  //           key: "1",
-  //           label: (
-  //             <span className="text-base text-[#6C757D] font-bold">
-  //               Trips and Prices
-  //             </span>
-  //           ),
-  //           children: <p className="text-base text-[#6C757D]">{text}</p>,
-  //         },
-  //       ]}
-  //     /> */
-}
+
